@@ -2,16 +2,25 @@ body {
     background-image: url(../img/hatter.jpg);
 }
 
-div {
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
     grid-template-areas: 
     "header header header"
-    "nav article aside"
+    "nav aside article"
     "footer footer footer";
 }
 header {
     grid-area: header;
+    background-image: url(../img/fejlec.jpg);
+    color: white;
+    text-align: center;
+    height: 100px;
+    max-height: 100px;
+    padding: 25px;
 }
 nav {
     grid-area: nav;
@@ -26,8 +35,12 @@ footer {
     grid-area: footer;
 }
 
-#wrapper {
-    width: 80%;
-    margin: 0 auto;
-    background-color: white;
+
+
+ul li {
+    list-style-type: none;
+}
+
+aside img {
+    width: 40%;
 }
