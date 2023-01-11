@@ -1,0 +1,33 @@
+body {
+    background-image: url(../img/hatter.jpg);
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav article aside"
+    "footer footer footer";
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+article {
+    grid-area: article;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
